@@ -3453,6 +3453,9 @@ public class JdbcUpdateTest {
 }
 ```
 
+
+过程化补充：id查询的参数不要硬编码，用变量传进，考的是dql，要用rs 的next来遍历
+
 > 注：实践 6 第三题用 `PreparedStatement` 预编译 + `?` 占位 + `setXxx` 绑参；第二题用 `Statement` 拼接固定 SQL。考试照这两段背就够。
 
 **JDBC 五步骤（必背）**：
